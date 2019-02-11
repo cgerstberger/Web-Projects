@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+li {
+    float: left;
+}
+li a{
+    display: block;
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: #111111;
+}
+#top-image {
+    position: relative;
+}
+#top-image-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + #main {
+    padding-top: 102px;
+}

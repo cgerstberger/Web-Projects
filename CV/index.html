@@ -2,44 +2,27 @@
 <html>
     <head>
         <title>Christoph Gerstberger</title>
-        <style>
-            body{
-                margin: 0;
-            }
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #333333;
-            }
-            li {
-                float: left;
-            }
-            li a{
-                display: block;
-                color: white;
-                padding: 1rem;
-                text-decoration: none;
-            }
-            li a:hover{
-                background-color: #111111;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="index.css" />
+        <script src="jquery-3.3.1.js"></script>
+        <script src="index.js"></script>
     </head>
     <body>
-        <header>
+        <div id="top-image" style="background-color: blue; height: 10rem;">
+            <div id="top-image-text">
+                <h1>Christoph Gerstberger</h1>
+            </div>
+        </div>
+        <header id="myHeader">
             <ul>
-                <li><a href="#welcome">Welcome</a></li>
-                <li><a href="#cv">CV</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a id="welcome" onclick="loadPage(this.id)" href="#main">Welcome</a></li>
+                <li><a id="cv" onclick="loadPage(this.id)">CV</a></li>
+                <li><a id="blog" onclick="loadPage(this.id)">Blog</a></li>
+                <li><a id="contact" onclick="loadPage(this.id)">Contact</a></li>
             </ul>
         </header>
-        <div id="welcome">Welcome</div>
-        <div id="cv">CV</div>
-        <div id="blog">Blog</div>
-        <div id="contact">Contact</div>
+        <div id="main" style="height: 80rem">
+
+        </div>
         <footer>
             
         </footer>
